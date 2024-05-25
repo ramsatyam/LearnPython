@@ -1,4 +1,17 @@
-# Duck Typing
+# Polymorphism
+Polymorphism means having many form. Poly means many, morphs means forms.
+There are four important topics related to polymorphism. 
+1. Duck Typing
+2. Overloading
+    1. Operator Overloading
+    2. Method Overloading
+    3. Constructor Overloading
+3. Overriding
+    1. Method Overriding
+    2. Constructor Overriding
+## 1. Duck Typing
+In python type cannot be specified explicityly, depending on the provided value at runtime the type is automatically considered.
+```
 class Duck:
     def talk(self):
         print('Duck Quacks')
@@ -25,18 +38,25 @@ dk = Duck()
 h = Human()
 d = Dog()
 
-f1(dk)
-f1(h)
-f1(d)
+f1(dk) ==>Ouput: Dog barks
+f1(h)  ==>output: Human speaks
+f1(d)  ==>output: Dog barks
+```
 
-#  OverLoading
-# 1. Operator Overloading
-# 2. Method Overloading
-# 3. Constructor Overloading
+#  2. OverLoading
 
-# 1. Operator Overloading
+Overloading ( **using same operator/method/constructor for multiple purposes**) is of three types
 
+    1. Operator Overloading: 
+    2. Method Overloading (**Methods having same name but different number of arguments**)
+    3. Constructor Overloading 
+* Method and constructor overloading is not possible. If we try to declare multiple methods with same name and different number of arguments then **python will always consider only last method/constructor**.
+* If method with variable number of arguments required then we can handle with **default arguments or with variable number of argument methods**.
+* Similarly, we can declare constructor **with default arguments or variable number of arguments**.
 
+### 2.1 Operator Overloading
+
+```
 class Book:
     def __init__(self, pages) -> None:
         self.pages = pages
@@ -53,10 +73,10 @@ b2 = Book(20)
 
 print(b1+b2)
 print(b1 * b2)
+```
+### 2.2 Method Overloading
 
-# 2. Method Overloading
-
-
+```
 class Test:
     def m1(self, a=None, b=None):
         print('No arg Method')
@@ -80,9 +100,9 @@ class Test01:
 t2 = Test01(3, 2, 1)
 t3 = Test01('a', 'b', 'c', 'd')
 # t2.m1(3,2,1)
-
-# 3. Constructor Overloading
-
+```
+### 2.3 Constructor Overloading
+```
 
 class Test02:
     def __init__(self, *a) -> None:
@@ -125,3 +145,8 @@ print('--------Child class---------')
 v11 = Test11()
 v11.speak()
 v11.walk()
+```
+## 3.1 Method Overriding
+```
+
+```
