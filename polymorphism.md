@@ -1,6 +1,6 @@
 # Polymorphism
-Polymorphism means having many form. Poly means many, morphs means forms.
-There are four important topics related to polymorphism. 
+The word <a href="https://www.w3schools.com/PYTHON/python_polymorphism.asp"> Polymorphism </a> means many forms, and in programming it refers to methods/functions/operators with the same name that can be executed on many objects or classes.
+There are important topics related to polymorphism. 
 1. Duck Typing
 2. Overloading
     1. Operator Overloading
@@ -14,17 +14,17 @@ In python type cannot be specified explicityly, depending on the provided value 
 ```
 class Duck:
     def talk(self):
-        print('Duck Quacks')
+        print('Talking from duck class')
 
 
 class Human:
     def talk(self):
-        print('Human speaks')
+        print('Talking from human class')
 
 
 class Dog:
     def bark(self):
-        print('Dog barks')
+        print('Talking from dog class')
 
 
 def f1(obj):
@@ -38,18 +38,18 @@ dk = Duck()
 h = Human()
 d = Dog()
 
-f1(dk) ==>Ouput: Dog barks
-f1(h)  ==>output: Human speaks
-f1(d)  ==>output: Dog barks
+f1(dk) ==>Ouput: Talking from duck class
+f1(h)  ==>output: Talking from human class
+f1(d)  ==>output: Talking from dog class
 ```
 
 #  2. OverLoading
 
-Overloading ( **using same operator/method/constructor for multiple purposes**) is of three types
-
-    1. Operator Overloading: 
-    2. Method Overloading (**Methods having same name but different number of arguments**)
-    3. Constructor Overloading 
+Overloading ( <strong>using same operator/method/constructor for multiple purposes</strong>) is of three types.
+1. Operator Overloading: 
+2. Method Overloading (<i>Methods having same name but different number of arguments</i>)
+3. Constructor Overloading 
+<br>
 * Method and constructor overloading is not possible. If we try to declare multiple methods with same name and different number of arguments then **python will always consider only last method/constructor**.
 * If method with variable number of arguments required then we can handle with **default arguments or with variable number of argument methods**.
 * Similarly, we can declare constructor **with default arguments or variable number of arguments**.
@@ -111,14 +111,11 @@ class Test02:
 
 
 t3 = Test02(30, 20, 10)
-
-# Method Overriding
-print(' # Method Overriding')
-
-
+```
+### 3.1 Method Overriding
+In Python, the <a href="https://realpython.com/python-super/">super()</a> function is used to refer to the parent class or superclass <i>(gives you access to methods in a superclass from the subclass that inherits from it)</i>
+```
 class Test10:
-    def __init__(self) -> None:
-        print('Parent constuctor executed')
 
     def walk(self):
         print('This is printed by Parent walk Method')
@@ -128,9 +125,6 @@ class Test10:
 
 
 class Test11(Test10):
-    def __init__(self) -> None:
-        super().__init__()
-        print('Child constructer executed')
 
     def walk(self):
         super().walk()
@@ -146,7 +140,35 @@ v11 = Test11()
 v11.speak()
 v11.walk()
 ```
-## 3.1 Method Overriding
+### 3. Constructor Overriding
 ```
+class Test20:
+    """Docstring to be provided"""
 
+    def __init__(self):
+        print('Parent Test20 constuctor executed')
+
+    def check_print(self):
+        print("Printing to check super method")
+
+
+class Test21(Test20):
+    """Docstring to be provided"""
+
+    def __init__(self) -> None:
+        print('Child Test21 constructer executed')
+
+
+class Test22(Test20):
+    """Docstring to be provided"""
+
+    def __init__(self) -> None:
+        print('Child Test22 constructer executed')
+        super().__init__()
+        super().check_print()
+
+
+v20 = Test20()
+v21 = Test21()
+v22 = Test22()
 ```
