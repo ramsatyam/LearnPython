@@ -1,3 +1,15 @@
+
+# Inheritance 
+Inheritance allows us to define a class that inherits all the methods and properties from another class.<br>
+<a href="https://www.scientecheasy.com/2023/09/types-of-inheritance-in-python.html/">Types of inheritance</a>
+1. Single Inheritance
+2. Multiple Inheritance
+3. Multilevel Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance
+<br></br>
+<img src ="https://www.scientecheasy.com/wp-content/uploads/2023/09/types-of-inheritance-in-python-768x553.png">
+
 # Polymorphism
 The word <a href="https://www.w3schools.com/PYTHON/python_polymorphism.asp"> Polymorphism </a> means many forms, and in programming it refers to methods/functions/operators with the same name that can be executed on many objects or classes.
 There are important topics related to polymorphism. 
