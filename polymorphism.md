@@ -15,12 +15,12 @@ The word <a href="https://www.w3schools.com/PYTHON/python_polymorphism.asp"> Pol
 There are important topics related to polymorphism. 
 1. Duck Typing
 2. Overloading
-    1. Operator Overloading
-    2. Method Overloading
-    3. Constructor Overloading
+    1. <a href="#21-operator-overloading">Operator Overloading</a>
+    2. <a href="#22-method-overloading">Method Overloading</a>
+    3. <a href="#23-constructor-overloading">Constructor Overloading</a>
 3. Overriding
-    1. Method Overriding
-    2. Constructor Overriding
+    1. <a href="#31-method-overriding">Method Overriding</a>
+    2. <a href="#3-constructor-overriding">Constructor Overriding</a>
 ## 1. Duck Typing
 In python type cannot be specified explicityly, depending on the provided value at runtime the type is automatically considered.
 ```
@@ -124,6 +124,7 @@ class Test02:
 
 t3 = Test02(30, 20, 10)
 ```
+# 3 Overriding 
 ### 3.1 Method Overriding
 In Python, the <a href="https://realpython.com/python-super/">super()</a> function is used to refer to the parent class or superclass <i>(gives you access to methods in a superclass from the subclass that inherits from it)</i>
 ```
