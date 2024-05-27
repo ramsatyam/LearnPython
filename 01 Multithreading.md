@@ -124,12 +124,7 @@ In python, we can implement synchronization by using the following
 1. Lock
 2. RLock
 3. Semaphore
-* Synchronization using Lock concept
-* Problem with simple Lock
-* Difference with Lock and RLock
-* Synchronization using Semaphore
-* Bounded Semaphore
-* Difference between Lock and Semaphore
+
 ### 2.1 Synchronization using Lock concept
 ```
 # Synchronization using Lock
@@ -330,6 +325,7 @@ ql.put(10)
 while not ql.empty():
     print(ql.get(), end=' ')
 ```
+`10 15 20 25`
 
 3. Priority Queue <br>
 Elements are inserted based on some priority order.
@@ -343,6 +339,7 @@ qp.put(10)
 while not qp.empty():
     print(qp.get(), end=' ')
 ```
+`10 15 20 25` <br>
 If data is non numeric, then we have to provide data in tuple form.
 ```
 import queue
@@ -354,6 +351,6 @@ qp.put((3,'Three'))
 while not qp.empty():
     print(qp.get()[1],end=' ')
 ```
-
+`Three six seven Eight`
 
 
