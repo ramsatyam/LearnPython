@@ -4,9 +4,9 @@ In IO (Input/Output) processing there are mainly two kinds of processing.
 2. Concurrent
 <table>
 <tr><td>Data</td><td>Data</td></tr>
-<tr><td>Multiprocessing (Parallelism)</td><td>concurrency</td></tr>
-<tr><td>Multithreading</td><td><li>concurrency.threading<li>concurrency.futures</ul></td></tr>
-<tr><td>Asynchronous processing</td><td>asyncio</td></tr>
+<tr><td>Multiprocessing (Parallelism)</td><td><li>concurrency<li>library: import multiprocessing</td></tr>
+<tr><td>Multithreading</td><td><li>import threading<li>concurrency.futures</ul></td></tr>
+<tr><td>Asynchronous processing</td><td><li>import asyncio</td></tr>
 </table>
 <p>Here in this article you can have a good understanding of what is the <a href="https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism">difference</a>.
 <p align="centre">
