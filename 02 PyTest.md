@@ -144,7 +144,7 @@ py.test -s -v
 ```
 Pytest: setUp(), tearDown(), setUpClas() and tearDownClass()
 ## How to implement setUp and tearDown method in pytest:
-By using some decorator
+By using decorator
 ```
 @pytest.fixture()
 def fn_name():
