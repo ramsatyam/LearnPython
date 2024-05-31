@@ -11,6 +11,17 @@ $ git config --global user.name "username"
 $ git config --global user.email "email@gmail.com
 $ git config --global push.default "simple"
 ```
+# Initialisation
+Initialize git repository in a project folder. Navigate to the folder and use the follwing commands
+* By default master branch will be created, if we want to start with a different branch or rename it here is the stack over flow discussion <a href="https://stackoverflow.com/questions/42871542/how-can-i-create-a-git-repository-with-the-default-branch-name-other-than-maste"> Link</a>
+```
+git init
+        # initializes git and 'master' as the branch
+git init --initial-branch=main
+        # initializes git with 'main' as branch
+
+```
+
 # Clone the central repository
 ```
 $ git clone <source-central-repo> <dest-localrepo>
